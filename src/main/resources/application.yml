@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: SpringBootJPATest
+
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: oracle
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+logging.level.org.hibernate.type.descriptor.sql: trace
+
